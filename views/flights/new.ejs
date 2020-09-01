@@ -7,9 +7,9 @@
     <link rel="stylesheet" href="/stylesheets/style.css" />
 </head>
 <body>
-        <input type="submit" value="ALL FLIGHTS">
-        <input type="submit" value="ADD FLIGHT">
-            <br>
+    <input type="submit" value="ALL FLIGHTS">
+    <input type="submit" value="ADD FLIGHT">
+        <br>
     <h2>Enter a New Flight</h2>
     <form action="/flights" method="POST">
         <label>Airline:
@@ -33,7 +33,8 @@
             <input type="text" name="flightNo">
         </label><br>
         <label>Departs:
-            <input type="text" name="departs">
+            <input type="datetime-local" name="departs" value="2020-08-31T02:15"
+            min="2020-09-01T00:00" max="2021-09-01T00:00">
         </label><br>
     </form>
 </body>
