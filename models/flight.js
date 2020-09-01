@@ -29,7 +29,7 @@ const flightSchema = new Schema({
         enum: [],
         default: () => Date.now() + 1,
     },
-})
+});
 
 
 
@@ -42,4 +42,4 @@ const flightSchema = new Schema({
 
 
 
-module.exports.model('Flight', flightSchema);
+module.exports = mongoose.model('Flight', flightSchema);
