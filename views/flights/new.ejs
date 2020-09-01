@@ -7,18 +7,34 @@
     <link rel="stylesheet" href="/stylesheets/style.css" />
 </head>
 <body>
+    <div class="topnav">
+        <input type="submit" value="ALL FLIGHTS">
+        <input type="submit" value="ADD FLIGHT">
+    </div><br>
     <h2>Enter a New Flight</h2>
     <form action="/flights" method="POST">
         <label>Airline:
             <select name="airline">
-                <option value="American"></option>
-                <option value="Delta"></option>
-                <option value="Southwest"></option>
-                <option value="United"></option>
+                <option value="American">American</option>
+                <option value="Delta">Delta</option>
+                <option value="Southwest">Southwest</option>
+                <option value="United">United</option>
+            </select>
+        </label><br>
+        <label>Airport:
+            <select name="airport">
+                <option value="ATL">ATL</option>
+                <option value="DFW">DFW</option>
+                <option value="DEN">DEN</option>
+                <option value="LAX">LAX</option>
+                <option value="SAN">SAN</option>
             </select>
         </label><br>
         <label>Flight Number:
-            <input type="text" name="Flight Number">
+            <input type="text" name="flightNo">
+        </label><br>
+        <label>Departs:
+            <input type="text" name="departs">
         </label><br>
     </form>
 </body>
